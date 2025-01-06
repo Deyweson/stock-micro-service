@@ -27,6 +27,8 @@ func main() {
 	server := gin.Default()
 
 	server.GET("/v1/stocks", stockController.GetStocks)
+	server.GET("/v1/stocks/prod/:prod_id", stockController.GetStocksByProdId)
+	server.GET("/v1/stocks/shop/:shop_id", stockController.GetStocksByProdId)
 
 	server.Run(":8080")
 }

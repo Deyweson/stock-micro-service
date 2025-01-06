@@ -18,3 +18,9 @@ Uma api para simular um micro serviço de controle de estoque, que o objetivo é
 
 `GET /v1/stocks`
 Rota de listagem das movimentações de estoque
+
+`GET /v1/stocks/prod/:prod_id`
+Rota de listagem das movimentações de estoque pelo id de um produto
+
+`GET /v1/stocks/shop/:shop_id`
+Rota de listagem das movimentações de estoque pelo id de uma loja
